@@ -1,11 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 
- * @Author: Joshua
- * @Date: 2021-08-18 17:52:44
- * @LastEditors: 
- * @LastEditTime: 2021-11-01 17:27:56
--->
 <template>
 	<a-layout id="components-layout-demo-custom-trigger" class="screen-xxl">
 		<a-layout-sider v-model="collapsed" width="256px" collapsible>
@@ -21,7 +13,9 @@
 					</div>
 				</topBar>
 			</a-layout-header>
-			<a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px', overflowY: 'scroll' }">
+			<a-layout-content
+				:style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px', overflowY: 'scroll' }"
+			>
 				<router-view></router-view>
 			</a-layout-content>
 		</a-layout>
@@ -29,11 +23,11 @@
 </template>
 
 <script>
-import TopBar from '../components/common/TopBar';
-import SideBar from '../components/common/SideBar';
+import TopBar from "../components/common/TopBar";
+import SideBar from "../components/common/SideBar";
 
 export default {
-	name: 'Home',
+	name: "Home",
 	components: {
 		TopBar,
 		SideBar,
