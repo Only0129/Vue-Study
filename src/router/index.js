@@ -15,7 +15,7 @@ const routes = [
 	},
 	{
 		path: "/",
-		redirect: "/form",
+		redirect: "/index",
 		name: "Home",
 		component: Home,
 		// route level code-splitting
@@ -27,6 +27,16 @@ const routes = [
 			sideBar: true,
 		},
 		children: [
+			{
+				path: "/index",
+				name: "index",
+				meta: {
+					title: "Index",
+					requireAuth: false,
+					sideBar: true,
+				},
+				component: () => import(/* webpackChunkName: "index" */ "../views/Index/Index"),
+			},
 			{
 				path: "/form",
 				name: "form",
