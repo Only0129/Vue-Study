@@ -1,4 +1,4 @@
-import { DatePicker, Select, Pagination, Table, Button, Input, Menu, Icon, Layout, Tag, Divider } from "ant-design-vue"; //按需引入ant-design-vue
+import { DatePicker, Select, Pagination, Table, Button, Input, Menu, Icon, Layout, Tag, Divider, Upload } from "ant-design-vue"; //按需引入ant-design-vue
 
 const components = {
 	DatePicker,
@@ -12,6 +12,7 @@ const components = {
 	Layout,
 	Tag,
 	Divider,
+	Upload,
 };
 
 const ComponentsHandler = {
